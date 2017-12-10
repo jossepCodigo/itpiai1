@@ -24,6 +24,18 @@ namespace Form_Usuario_Contrasenia
             this.planObt = new PlanificacionCC();
             this.listP = new List<PeriodoCC>();
             cargarGestiones();
+            cargarCarreras();
+            cargarDocentes();
+        }
+        private void cargarDocentes() {
+            comboBox2.Text = "";
+            List<DocenteCC> currs = new List<DocenteCC>();
+            currs.
+            for (int i = 0; i < currs.Count; i++)
+            {
+                MateriaCC act = currs.ElementAt(i);
+                comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
+            }
         }
         private void cargarGestiones() {
             comboBox1.Items.Clear();
@@ -33,7 +45,16 @@ namespace Form_Usuario_Contrasenia
                 comboBox1.Items.Add(act.Modalidad+" "+act.Numero+" "+act.Año);
             }
         }
-        ///ver prueba
+
+        private void cargarCarreras() {
+            comboBox2.Text = "";
+            List<MateriaCC> currs = MateriaCC.all();
+            for (int i = 0; i < currs.Count; i++)
+            {
+                MateriaCC act = currs.ElementAt(i);
+                comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
+            }
+        }
 
         private void groupBox1_Enter(object sender, EventArgs e){
 
