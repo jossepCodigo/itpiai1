@@ -1,0 +1,440 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{454D75F8-3173-48BF-8460-7E9EBC57FDCE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Form_Usuario_Contrasenia</RootNamespace>
+    <AssemblyName>Form_Usuario_Contrasenia</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.140.1000.523\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Curricula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Curricula.Designer.cs">
+      <DependentUpon>Curricula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Especialidad.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Especialidad.Designer.cs">
+      <DependentUpon>Especialidad.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Administrador.Designer.cs">
+      <DependentUpon>Formulario_Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Docente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Docente.Designer.cs">
+      <DependentUpon>Formulario_Docente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Estudiante.Designer.cs">
+      <DependentUpon>Formulario_Estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formulario_Secretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formulario_Secretaria.Designer.cs">
+      <DependentUpon>Formulario_Secretaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inscripcion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inscripcion.Designer.cs">
+      <DependentUpon>Inscripcion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="institutoDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>institutoDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Kardex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Kardex.Designer.cs">
+      <DependentUpon>Kardex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pago.Designer.cs">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PlanificacionCurso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PlanificacionCurso.Designer.cs">
+      <DependentUpon>PlanificacionCurso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Carrera.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Carrera.Designer.cs">
+      <DependentUpon>Registro_Carrera.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Administrador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Administrador.Designer.cs">
+      <DependentUpon>Registro_Administrador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Aula.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Aula.Designer.cs">
+      <DependentUpon>Registro_Aula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Docente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Docente.Designer.cs">
+      <DependentUpon>Registro_Docente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Estudiante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Estudiante.Designer.cs">
+      <DependentUpon>Registro_Estudiante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Gestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Gestion.Designer.cs">
+      <DependentUpon>Registro_Gestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Horario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Horario.Designer.cs">
+      <DependentUpon>Registro_Horario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Materia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Materia.Designer.cs">
+      <DependentUpon>Registro_Materia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Registro_Secretaria.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Registro_Secretaria.Designer.cs">
+      <DependentUpon>Registro_Secretaria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="Telefono.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Telefono.Designer.cs">
+      <DependentUpon>Telefono.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Usuario_Contrasenia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Usuario_Contrasenia.Designer.cs">
+      <DependentUpon>Usuario_Contrasenia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Curricula.resx">
+      <DependentUpon>Curricula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Especialidad.resx">
+      <DependentUpon>Especialidad.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Administrador.resx">
+      <DependentUpon>Formulario_Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Docente.resx">
+      <DependentUpon>Formulario_Docente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Estudiante.resx">
+      <DependentUpon>Formulario_Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formulario_Secretaria.resx">
+      <DependentUpon>Formulario_Secretaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inscripcion.resx">
+      <DependentUpon>Inscripcion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Kardex.resx">
+      <DependentUpon>Kardex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pago.resx">
+      <DependentUpon>Pago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlanificacionCurso.resx">
+      <DependentUpon>PlanificacionCurso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Carrera.resx">
+      <DependentUpon>Registro_Carrera.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Administrador.resx">
+      <DependentUpon>Registro_Administrador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Aula.resx">
+      <DependentUpon>Registro_Aula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Docente.resx">
+      <DependentUpon>Registro_Docente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Estudiante.resx">
+      <DependentUpon>Registro_Estudiante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Gestion.resx">
+      <DependentUpon>Registro_Gestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Horario.resx">
+      <DependentUpon>Registro_Horario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Materia.resx">
+      <DependentUpon>Registro_Materia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Registro_Secretaria.resx">
+      <DependentUpon>Registro_Secretaria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Telefono.resx">
+      <DependentUpon>Telefono.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Usuario_Contrasenia.resx">
+      <DependentUpon>Usuario_Contrasenia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="institutoDataSet.xsc">
+      <DependentUpon>institutoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="institutoDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>institutoDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="institutoDataSet.xss">
+      <DependentUpon>institutoDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\password.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\next.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\zoom-in.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-58.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-18.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\archive-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cancel1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\trash.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\scissors.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ITPIAI.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\visualization.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\open-book.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\photo-camera.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\notepad1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\save1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\server.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chat.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pad.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loading.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-501.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-10.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-581.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-582.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-181.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\user-38.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\printer.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\folder1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CAPADATOS\CAPA_DATOS.csproj">
+      <Project>{cefa2fe5-253f-477e-8bc8-fa438e68b4ff}</Project>
+      <Name>CAPA_DATOS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CAPANEGOCIO\CAPA_NEGOCIO.csproj">
+      <Project>{6433f437-2da1-4c9d-8f27-a09ef720b6c8}</Project>
+      <Name>CAPA_NEGOCIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\phone-call-9.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cloud-computing-1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
