@@ -29,13 +29,13 @@ namespace Form_Usuario_Contrasenia
         }
         private void cargarDocentes() {
             comboBox2.Text = "";
-            List<DocenteCC> currs = new List<DocenteCC>();
-            currs.
-            for (int i = 0; i < currs.Count; i++)
-            {
-                MateriaCC act = currs.ElementAt(i);
-                comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
-            }
+            //List<DocenteCC> currs = new List<DocenteCC>();
+            //currs.
+            //for (int i = 0; i < currs.Count; i++)
+            //{
+            //    MateriaCC act = currs.ElementAt(i);
+            //    comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
+            //}
         }
         private void cargarGestiones() {
             comboBox1.Items.Clear();
