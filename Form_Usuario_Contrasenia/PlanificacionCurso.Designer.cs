@@ -49,9 +49,9 @@
             this.label11 = new System.Windows.Forms.Label();
             this.comboBox4 = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.button1 = new System.Windows.Forms.Button();
             this.comboBox5 = new System.Windows.Forms.ComboBox();
             this.listBox2 = new System.Windows.Forms.ListBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
             this.label13 = new System.Windows.Forms.Label();
@@ -280,10 +280,29 @@
             this.groupBox1.Text = "Agregar Periodos Para la Materia";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.DarkGray;
+            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.button1.Location = new System.Drawing.Point(201, 176);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(91, 41);
+            this.button1.TabIndex = 24;
+            this.button1.Text = "Agregar";
+            this.button1.UseVisualStyleBackColor = false;
+            // 
             // comboBox5
             // 
             this.comboBox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.comboBox5.FormattingEnabled = true;
+            this.comboBox5.Items.AddRange(new object[] {
+            "lunes",
+            "martes",
+            "miercoles",
+            "jueves",
+            "viernes",
+            "sabado",
+            "domingo"});
             this.comboBox5.Location = new System.Drawing.Point(128, 49);
             this.comboBox5.Name = "comboBox5";
             this.comboBox5.Size = new System.Drawing.Size(164, 24);
@@ -296,17 +315,6 @@
             this.listBox2.Name = "listBox2";
             this.listBox2.Size = new System.Drawing.Size(233, 238);
             this.listBox2.TabIndex = 27;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.DarkGray;
-            this.button1.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button1.Location = new System.Drawing.Point(201, 176);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(91, 41);
-            this.button1.TabIndex = 24;
-            this.button1.Text = "Agregar";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label12
             // 
@@ -335,9 +343,9 @@
             this.label13.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(128)))));
             this.label13.Location = new System.Drawing.Point(663, 152);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(222, 16);
+            this.label13.Size = new System.Drawing.Size(226, 16);
             this.label13.TabIndex = 31;
-            this.label13.Text = "GUARDAR PLAN DE MATERIA";
+            this.label13.Text = "GUARDAR PLAN DE MATERIA.";
             // 
             // pBxGuardar
             // 
@@ -357,7 +365,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ClientSize = new System.Drawing.Size(984, 560);
+            this.ClientSize = new System.Drawing.Size(989, 565);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.pBxGuardar);
             this.Controls.Add(this.button2);

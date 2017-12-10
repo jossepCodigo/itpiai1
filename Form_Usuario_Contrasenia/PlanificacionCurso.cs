@@ -23,6 +23,15 @@ namespace Form_Usuario_Contrasenia
             InitializeComponent();
             this.planObt = new PlanificacionCC();
             this.listP = new List<PeriodoCC>();
+            cargarGestiones();
+        }
+        private void cargarGestiones() {
+            comboBox1.Items.Clear();
+            List<GestionCC> gests = GestionCC.allActivo();
+            for (int i = 0; i < gests.Count; i++){
+                GestionCC act = gests.ElementAt(i);
+                comboBox1.Items.Add(act.Modalidad+" "+act.Numero+" "+act.Año);
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e){
