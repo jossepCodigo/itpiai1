@@ -18,8 +18,7 @@ namespace CAPADATOS
         public Data() {
             try
             {
-                //Data Source = JOSSEP2\SQLEXPRESS; Initial Catalog = instituto; Integrated Security = True
-                cn = new SqlConnection(@"Data Source=LAPTOR_JHASMANY\SQLEXPRESS01;Initial Catalog=instituto;Integrated Security=True");
+                cn = new SqlConnection(@"Data Source=JOSSEP2\SQLEXPRESS;Initial Catalog=instituto;Integrated Security=True");
                 cn.Open();
             }
             catch (Exception ex)
