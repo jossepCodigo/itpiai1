@@ -23,6 +23,37 @@ namespace Form_Usuario_Contrasenia
             InitializeComponent();
             this.planObt = new PlanificacionCC();
             this.listP = new List<PeriodoCC>();
+            cargarGestiones();
+            cargarCarreras();
+            cargarDocentes();
+        }
+        private void cargarDocentes() {
+            comboBox2.Text = "";
+            List<DocenteCC> currs = new List<DocenteCC>();
+            currs.
+            for (int i = 0; i < currs.Count; i++)
+            {
+                MateriaCC act = currs.ElementAt(i);
+                comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
+            }
+        }
+        private void cargarGestiones() {
+            comboBox1.Items.Clear();
+            List<GestionCC> gests = GestionCC.allActivo();
+            for (int i = 0; i < gests.Count; i++){
+                GestionCC act = gests.ElementAt(i);
+                comboBox1.Items.Add(act.Modalidad+" "+act.Numero+" "+act.Año);
+            }
+        }
+
+        private void cargarCarreras() {
+            comboBox2.Text = "";
+            List<MateriaCC> currs = MateriaCC.all();
+            for (int i = 0; i < currs.Count; i++)
+            {
+                MateriaCC act = currs.ElementAt(i);
+                comboBox2.Items.Add(act.Nombre + " " + act.Sigla);
+            }
         }
 
         private void groupBox1_Enter(object sender, EventArgs e){

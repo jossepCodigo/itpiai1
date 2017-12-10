@@ -74,10 +74,12 @@ namespace CAPADATOS
                 while (res.Read()){
                     List<Object> gest = new List<object>();
                     gest.Add(res.GetInt32(0));
-                    gest.Add(res.GetString(1));
-                    gest.Add(res.GetString(2));
-                    gest.Add(res.GetInt32(3));
-                    gest.Add(res.GetBoolean(4));
+                    gest.Add(res.GetInt32(1));
+                    gest.Add(res.GetInt32(2));
+                    gest.Add(res.GetDateTime(3));
+                    gest.Add(res.GetDateTime(4));
+                    gest.Add(res.GetString(5));
+                    gest.Add(res.GetBoolean(6));
                     gests.Add(gest);
                 }
             }

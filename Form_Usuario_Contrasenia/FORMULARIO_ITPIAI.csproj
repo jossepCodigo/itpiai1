@@ -71,6 +71,11 @@
     <Compile Include="Curricula.Designer.cs">
       <DependentUpon>Curricula.cs</DependentUpon>
     </Compile>
+    <Compile Include="DataSetAdministrador.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetAdministrador.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Especialidad.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -256,6 +261,7 @@
     <EmbeddedResource Include="Registro_Secretaria.resx">
       <DependentUpon>Registro_Secretaria.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ReportBitacora.rdlc" />
     <EmbeddedResource Include="Telefono.resx">
       <DependentUpon>Telefono.cs</DependentUpon>
     </EmbeddedResource>
@@ -272,6 +278,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="DataSetAdministrador.xsc">
+      <DependentUpon>DataSetAdministrador.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetAdministrador.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetAdministrador.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetAdministrador.xss">
+      <DependentUpon>DataSetAdministrador.xsd</DependentUpon>
+    </None>
     <None Include="institutoDataSet.xsc">
       <DependentUpon>institutoDataSet.xsd</DependentUpon>
     </None>
@@ -403,10 +420,6 @@
     <None Include="Resources\folder1.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CAPADATOS\CAPA_DATOS.csproj">
-      <Project>{cefa2fe5-253f-477e-8bc8-fa438e68b4ff}</Project>
-      <Name>CAPA_DATOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CAPANEGOCIO\CAPA_NEGOCIO.csproj">
       <Project>{6433f437-2da1-4c9d-8f27-a09ef720b6c8}</Project>
       <Name>CAPA_NEGOCIO</Name>

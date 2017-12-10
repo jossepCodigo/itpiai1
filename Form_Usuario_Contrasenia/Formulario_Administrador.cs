@@ -121,6 +121,8 @@ namespace Form_Usuario_Contrasenia
 
         private void Formulario_Administrador_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'DataSetAdministrador.bitacora' Puede moverla o quitarla según sea necesario.
+            this.bitacoraTableAdapter.Fill(this.DataSetAdministrador.bitacora);
             this.reportViewer1.RefreshReport();
         }
 

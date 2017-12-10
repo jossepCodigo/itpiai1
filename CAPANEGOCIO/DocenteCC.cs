@@ -27,6 +27,24 @@ namespace CAPANEGOCIO
             llenar(u);
         }
 
+        //public static List<MateriaCC> all()
+        //{
+        //    List<MateriaCC> res = new List<MateriaCC>();
+        //    List<Object> mats = Materia.all();
+        //    for (int i = 0; i < mats.Count; i++)
+        //    {
+        //        List<Object> mat = (List<Object>)mats.ElementAt(i);
+        //        MateriaCC act = new MateriaCC();
+        //        act.id = (int)mat.ElementAt(0);
+        //        act.sigla = (string)mat.ElementAt(1);
+        //        act.nombre = (string)mat.ElementAt(2);
+        //        act.carga_h = (int)mat.ElementAt(3);
+        //        act.activo = (bool)mat.ElementAt(4);
+        //        res.Add(act);
+        //    }
+        //    return res;
+        //}
+
         private void llenar(List<Object> u){
             if (u.Count == 0){
                 nulo();
