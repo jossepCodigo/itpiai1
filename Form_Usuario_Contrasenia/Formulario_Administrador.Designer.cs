@@ -28,6 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -67,10 +69,12 @@
             this.pBxInscripcionFA = new System.Windows.Forms.PictureBox();
             this.pBxREstudianteFA = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
             this.label18 = new System.Windows.Forms.Label();
             this.pbxPlanificacion = new System.Windows.Forms.PictureBox();
             this.label16 = new System.Windows.Forms.Label();
             this.pbGest = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tBxNombreFA = new System.Windows.Forms.TextBox();
             this.tBxCodITPIAIFA = new System.Windows.Forms.TextBox();
             this.label25 = new System.Windows.Forms.Label();
@@ -79,9 +83,10 @@
             this.cBxCarreraFA = new System.Windows.Forms.ComboBox();
             this.label24 = new System.Windows.Forms.Label();
             this.pBxBoletinFA = new System.Windows.Forms.PictureBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.DataSetAdministrador = new Form_Usuario_Contrasenia.DataSetAdministrador();
+            this.bitacoraBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bitacoraTableAdapter = new Form_Usuario_Contrasenia.DataSetAdministradorTableAdapters.bitacoraTableAdapter();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBxGuardarFA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBxEditarFA)).BeginInit();
@@ -105,8 +110,10 @@
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPlanificacion)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGest)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBxBoletinFA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxBoletinFA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetAdministrador)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // panel5
@@ -347,6 +354,10 @@
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            reportDataSource1.Name = "DataSet1";
+            reportDataSource1.Value = this.bitacoraBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "Form_Usuario_Contrasenia.ReportBitacora.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
@@ -612,6 +623,18 @@
             this.panel3.Size = new System.Drawing.Size(983, 132);
             this.panel3.TabIndex = 21;
             // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.White;
+            this.label17.Location = new System.Drawing.Point(422, 7);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(50, 16);
+            this.label17.TabIndex = 39;
+            this.label17.Text = "PAGO";
+            // 
             // label18
             // 
             this.label18.AutoSize = true;
@@ -661,6 +684,20 @@
             this.pbGest.TabIndex = 27;
             this.pbGest.TabStop = false;
             this.pbGest.Click += new System.EventHandler(this.pbGest_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.pictureBox1.Image = global::Form_Usuario_Contrasenia.Properties.Resources.open_book;
+            this.pictureBox1.Location = new System.Drawing.Point(403, 26);
+            this.pictureBox1.MaximumSize = new System.Drawing.Size(100, 106);
+            this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 106);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(100, 106);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
             // 
             // tBxNombreFA
             // 
@@ -751,32 +788,6 @@
             this.pBxBoletinFA.TabStop = false;
             this.pBxBoletinFA.Click += new System.EventHandler(this.pBxBoletinFA_Click);
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label17.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.ForeColor = System.Drawing.Color.White;
-            this.label17.Location = new System.Drawing.Point(422, 7);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(50, 16);
-            this.label17.TabIndex = 39;
-            this.label17.Text = "PAGO";
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.pictureBox1.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.pictureBox1.Image = global::Form_Usuario_Contrasenia.Properties.Resources.open_book;
-            this.pictureBox1.Location = new System.Drawing.Point(403, 26);
-            this.pictureBox1.MaximumSize = new System.Drawing.Size(100, 106);
-            this.pictureBox1.MinimumSize = new System.Drawing.Size(100, 106);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(100, 106);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 38;
-            this.pictureBox1.TabStop = false;
-            // 
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
@@ -784,6 +795,20 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(282, 198);
             this.panel6.TabIndex = 40;
+            // 
+            // DataSetAdministrador
+            // 
+            this.DataSetAdministrador.DataSetName = "DataSetAdministrador";
+            this.DataSetAdministrador.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // bitacoraBindingSource
+            // 
+            this.bitacoraBindingSource.DataMember = "bitacora";
+            this.bitacoraBindingSource.DataSource = this.DataSetAdministrador;
+            // 
+            // bitacoraTableAdapter
+            // 
+            this.bitacoraTableAdapter.ClearBeforeFill = true;
             // 
             // Formulario_Administrador
             // 
@@ -830,8 +855,10 @@
             this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pbxPlanificacion)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbGest)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pBxBoletinFA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pBxBoletinFA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.DataSetAdministrador)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bitacoraBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -893,5 +920,8 @@
         private System.Windows.Forms.PictureBox pbxPlanificacion;
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
         private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.BindingSource bitacoraBindingSource;
+        private DataSetAdministrador DataSetAdministrador;
+        private DataSetAdministradorTableAdapters.bitacoraTableAdapter bitacoraTableAdapter;
     }
 }
