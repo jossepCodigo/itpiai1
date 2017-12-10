@@ -33,7 +33,7 @@ namespace Form_Usuario_Contrasenia
                 comboBox1.Items.Add(act.Modalidad+" "+act.Numero+" "+act.Año);
             }
         }
-
+        ///ver prueba
 
         private void groupBox1_Enter(object sender, EventArgs e){
 
