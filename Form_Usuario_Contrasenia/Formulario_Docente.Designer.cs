@@ -38,6 +38,7 @@
             this.pBxCortarFD = new System.Windows.Forms.PictureBox();
             this.pBxBuscarFD = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.label5 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.tBxNombreFD = new System.Windows.Forms.TextBox();
@@ -57,7 +58,6 @@
             this.pBxEditarFD = new System.Windows.Forms.PictureBox();
             this.pBxEliminarFD = new System.Windows.Forms.PictureBox();
             this.pBxCopiarFD = new System.Windows.Forms.PictureBox();
-            this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pBxCancelarFD)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pBxSalirFD)).BeginInit();
@@ -195,6 +195,16 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(693, 283);
             this.panel2.TabIndex = 7;
+            // 
+            // reportViewer1
+            // 
+            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
+            this.reportViewer1.Name = "reportViewer1";
+            this.reportViewer1.ProcessingMode = Microsoft.Reporting.WinForms.ProcessingMode.Remote;
+            this.reportViewer1.ServerReport.BearerToken = null;
+            this.reportViewer1.Size = new System.Drawing.Size(693, 283);
+            this.reportViewer1.TabIndex = 0;
             // 
             // label5
             // 
@@ -417,14 +427,6 @@
             this.pBxCopiarFD.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pBxCopiarFD.TabIndex = 0;
             this.pBxCopiarFD.TabStop = false;
-            // 
-            // reportViewer1
-            // 
-            this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.reportViewer1.Location = new System.Drawing.Point(0, 0);
-            this.reportViewer1.Name = "reportViewer1";
-            this.reportViewer1.Size = new System.Drawing.Size(693, 283);
-            this.reportViewer1.TabIndex = 0;
             // 
             // Formulario_Docente
             // 
