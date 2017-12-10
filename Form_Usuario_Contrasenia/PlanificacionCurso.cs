@@ -34,6 +34,7 @@ namespace Form_Usuario_Contrasenia
             }
         }
 
+
         private void groupBox1_Enter(object sender, EventArgs e){
 
         }
