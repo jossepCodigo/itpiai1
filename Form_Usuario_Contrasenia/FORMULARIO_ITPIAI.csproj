@@ -420,10 +420,6 @@
     <None Include="Resources\folder1.png" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CAPADATOS\CAPA_DATOS.csproj">
-      <Project>{cefa2fe5-253f-477e-8bc8-fa438e68b4ff}</Project>
-      <Name>CAPA_DATOS</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CAPANEGOCIO\CAPA_NEGOCIO.csproj">
       <Project>{6433f437-2da1-4c9d-8f27-a09ef720b6c8}</Project>
       <Name>CAPA_NEGOCIO</Name>
